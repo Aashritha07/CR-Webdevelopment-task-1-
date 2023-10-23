@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <section class="container">
+        <section class="input-section">
+            <h2>Enter Your Information</h2>
+            <form id="resume-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education" required>
+                <label for="experience">Work Experience:</label>
+                <input type="text" id="experience" name="experience" required>
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+                <label for="DOB">Date of birth:</label>
+                <input type="integers" id="DOB" name="DOB" required>
+                <label for="contact">Contact details:</label>
+                <input type="integers" id="Contact No:" name="Contact details" required>
+            </form>
+        </section>
+        <section class="preview-section">
+            <h2>Preview Your Resume</h2>
+            <div id="resume-preview">
+                <!-- Preview content will be displayed here -->
+            </div>
+        </section>
+    </section>
+    <button id="download-btn">Download PDF</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

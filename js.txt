@@ -1,0 +1,31 @@
+// Function to update the resume preview
+function updateResumePreview() {
+  const name = document.getElementById('name').value;
+  const education = document.getElementById('education').value;
+  const experience = document.getElementById('experience').value;
+  const skills = document.getElementById('skills').value;
+
+  const resumePreview = document.getElementById('resume-preview');
+  const html = `
+    <h2>Preview Your Resume</h2>
+    <h3>${name}</h3>
+    <p><strong>Education:</strong> ${education}</p>
+    <p><strong>Experience:</strong> ${experience}</p>
+    <p><strong>Skills:</strong> ${skills}</p>
+  `;
+
+  resumePreview.innerHTML = html;
+}
+
+// Add an event listener to update the preview when input changes
+const formInputs = document.querySelectorAll('input');
+formInputs.forEach((input) => {
+  input.addEventListener('input', updateResumePreview);
+});
+
+// Simulate a download action (this is a placeholder)
+const downloadButton = document.getElementById('download-button');
+downloadButton.addEventListener('click', () => {
+  const resumeData = document.getElementById('resume-preview').innerText;
+  alert('Simulating download:\n\n' + resumeData);
+});

@@ -1,0 +1,86 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and set text color */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Center the content container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Style the input section */
+.input-section {
+  flex: 1;
+  background-color: black
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+/* Style the form inputs and labels */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style the preview section */
+.preview-section {
+  flex: 2;
+  padding: 20px;
+}
+
+#resume-preview {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style the download button */
+#download-btn {
+  display: block;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#download-btn:hover {
+  background-color: #555;
+}
